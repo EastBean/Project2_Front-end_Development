@@ -277,3 +277,56 @@ body {
         font-size: 30px;
     }
 }
+
+@media screen and (max-width: 400px) {
+
+    .add-button {
+        margin-right: 3%;
+    }
+
+    .publisher, .publisher1, .publishyear, .publishyear1 {
+        display: none;
+    }
+
+    .num {
+        width: 7%;
+    }
+
+    .booknum, .booknum1 {
+        width: 15%;
+    }
+
+    .title, .title1 {
+        width: 38%;
+    }
+
+    .author, .author1 {
+        width: 24%;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .navbar {
+        width: 100%;
+    }
+
+    .navbar a {
+        width: 25%;
+    }
+
+    .index-line1 {
+        box-shadow: 0 4px 4px -4px gray;
+        margin-bottom: 5%;
+        padding-bottom: 1px;
+        flex-direction: column;
+    }
+
+    .index-myBookManager {
+        width: 100%;
+        text-align: center;
+        padding-top: 12px;
+        font-size: 30px;
+    }
+}
