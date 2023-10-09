@@ -5,6 +5,10 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+.index-myBookManager:hover {
+    cursor: pointer;
+}
+
 .index-bookList {
     font-size: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -103,13 +107,6 @@ body {
     padding: 20px;
 }
 
-/* Footer */
-.footer {
-    /* padding: 20px; */
-    /* text-align: center; */
-    /* background: #ddd; */
-}
-
 .edit-img {
     margin-top: 4px;
     width: 20px;
@@ -146,10 +143,6 @@ body {
     display: flex;
     background-color: white;
     box-shadow: 0 4px 4px -4px rgb(215, 215, 215);
-}
-
-.content {
-
 }
 
 .list-number {
@@ -243,10 +236,64 @@ body {
     width: 52px;
 }
 
+ a {
+    font-weight: 700;
+    text-decoration-line: none;
+    color: black;
+}
+
 /* .value p {
     margin-left: 1%;
     margin-right: 7%;
 } */
+.input-num, .input-booknum, .input-title, .input-author, .input-publisher, .input-year {
+    border-radius: 10px;
+    width: calc(100vw*360/1440);
+    height: calc(100vh*60/820);
+}
+
+.comment {
+    border-radius: 10px;
+    width: calc(100vw*1000/1440);
+    height: calc(100vh*150/820);
+}
+
+.first-row, .second-row{
+    padding-left: 2%;
+    margin-bottom: 1%;
+    padding-right: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.third-row {
+    padding-left: 2%;
+    margin-bottom: 5%;
+    padding-right: 2%;
+}
+
+.last-row {
+    padding-left: 2%;
+    margin-bottom: 5%;
+    padding-right: 2%;
+}
+
+.add-button2{
+    width: calc(100vw*120/1440);
+    height: calc(100vh*40/820);
+    border-radius: 6px;
+    background-color: rgba(20, 137, 33, 0.767);
+    color: white;
+    margin-right: 2%;
+}
+
+.reset-button {
+    width: calc(100vw*120/1440);
+    height: calc(100vh*40/820);
+    border-radius: 6px;
+    background-color: rgb(246, 130, 130);
+    color: white;
+}
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {

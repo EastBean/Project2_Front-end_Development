@@ -14,7 +14,7 @@
     <!-- Note -->
     <div>
         <div class="index-line1">
-            <div class="index-myBookManager">&nbsp;My Book Manager</div>
+            <div class="index-myBookManager" onclick="location.href='index.html'">&nbsp;My Book Manager</div>
             <!-- Navigation Bar -->
             <div class="navbar">
                 <a href="#">Home</a>
@@ -29,7 +29,7 @@
     <div class="header">
         <div class="index-line2">
             <p class="index-bookList">&nbsp;&nbsp;<b>Book List</b></p>
-            <p class="add-button" onclick="alert('추가')">Add</div>
+            <p class="add-button" onclick="location.href='add.html'">Add</div>
         </div>
     </div>
 
@@ -45,132 +45,54 @@
         </div>
         
         <div class="grey-line">
-            <p class="num">10</p>
+            <p class="num">4</p>
             <p class="booknum">909</p>
-            <p class="title">사피엔스</p>
+            <a href="view.html?id=4" class="title">사피엔스</a>
             <p class="author">유발 하라리</p>
             <p class="publisher">김영사</p>
             <p class="publishyear">2015</p>
             <div class="menu">
-                <img class="edit-img" src="./edit.png" alt="수정" onclick="alert('수정')">
-                <img class="delete-img" src="./delete.png" alt="삭제" onclick="alert('삭제')">
-            </div>
-        </div>
-        
-        <div class="white-line">
-            <p class="num">9</p>
-            <p class="booknum">813.7</p>
-            <p class="title">종의 기원</p>
-            <p class="author">찰스 다윈</p>
-            <p class="publisher">동서문화사</p>
-            <p class="publishyear">2013</p>
-            <div class="menu">
-                <img class="edit-img" src="./edit.png" alt="수정" onclick="alert('수정')">
-                <img class="delete-img" src="./delete.png" alt="삭제" onclick="alert('삭제')">
-            </div>
-        </div>
-        
-        <div class="grey-line">
-            <p class="num">8</p>
-            <p class="booknum">005.5</p>
-            <p class="title">혼자 공부하는 자바</p>
-            <p class="author">신용권</p>
-            <p class="publisher">한빛미디어</p>
-            <p class="publishyear">2015</p>
-            <div class="menu">
-                <img class="edit-img" src="./edit.png" alt="수정" onclick="alert('수정')">
-                <img class="delete-img" src="./delete.png" alt="삭제" onclick="alert('삭제')">
-            </div>
-        </div>
-        
-        <div class="white-line">
-            <p class="num">7</p>
-            <p class="booknum">005.13</p>
-            <p class="title">자바의 정석</p>
-            <p class="author">남궁성</p>
-            <p class="publisher">도우출판</p>
-            <p class="publishyear">2013</p>
-            <div class="menu">
-                <img class="edit-img" src="./edit.png" alt="수정" onclick="alert('수정')">
-                <img class="delete-img" src="./delete.png" alt="삭제" onclick="alert('삭제')">
-            </div>
-        </div>
-        
-        <div class="grey-line">
-            <p class="num">6</p>
-            <p class="booknum">443.1</p>
-            <p class="title">시간의 역사</p>
-            <p class="author">스티븐 호킹</p>
-            <p class="publisher">청림출판</p>
-            <p class="publishyear">1995</p>
-            <div class="menu">
-                <img class="edit-img" src="./edit.png" alt="수정" onclick="alert('수정')">
-                <img class="delete-img" src="./delete.png" alt="삭제" onclick="alert('삭제')">
-            </div>
-        </div>
-        
-        <div class="white-line">
-            <p class="num">5</p>
-            <p class="booknum">530.01</p>
-            <p class="title">공학이란 무엇인가</p>
-            <p class="author">성풍현</p>
-            <p class="publisher">살림출판r</p>
-            <p class="publishyear">2014</p>
-            <div class="menu">
-                <img class="edit-img" src="./edit.png" alt="수정" onclick="alert('수정')">
-                <img class="delete-img" src="./delete.png" alt="삭제" onclick="alert('삭제')">
-            </div>
-        </div>
-        
-        <div class="grey-line">
-            <p class="num">4</p>
-            <p class="booknum">331.54</p>
-            <p class="title">생각하지 않는 사람들</p>
-            <p class="author">니콜라스 카</p>
-            <p class="publisher">청림출판</p>
-            <p class="publishyear">2011</p>
-            <div class="menu">
-                <img class="edit-img" src="./edit.png" alt="수정" onclick="alert('수정')">
-                <img class="delete-img" src="./delete.png" alt="삭제" onclick="alert('삭제')">
+                <img class="edit-img" src="./edit.png" alt="수정" onclick="location.href='edit.html?id=4'">
+                <img class="delete-img" src="./delete.png" alt="삭제" onclick="deleteCheck()">
             </div>
         </div>
         
         <div class="white-line">
             <p class="num">3</p>
-            <p class="booknum">331.54</p>
-            <p class="title">기술의 충격</p>
-            <p class="author">케빈 켈리</p>
-            <p class="publisher">민음사</p>
-            <p class="publishyear">2011</p>
+            <p class="booknum">813.7</p>
+            <a href="view.html?id=3" class="title">종의 기원</a>
+            <p class="author">찰스 다윈</p>
+            <p class="publisher">동서문화사</p>
+            <p class="publishyear">2013</p>
             <div class="menu">
-                <img class="edit-img" src="./edit.png" alt="수정" onclick="alert('수정')">
-                <img class="delete-img" src="./delete.png" alt="삭제" onclick="alert('삭제')">
+                <img class="edit-img" src="./edit.png" alt="수정" onclick="location.href='edit.html?id=3'">
+                <img class="delete-img" src="./delete.png" alt="삭제" onclick="deleteCheck()">
             </div>
         </div>
         
         <div class="grey-line">
             <p class="num">2</p>
-            <p class="booknum">401</p>
-            <p class="title">위험한 과학책</p>
-            <p class="author">랜들 먼로</p>
-            <p class="publisher">시공사</p>
+            <p class="booknum">005.5</p>
+            <a href="view.html?id=2" class="title">혼자 공부하는 자바</a>
+            <p class="author">신용권</p>
+            <p class="publisher">한빛미디어</p>
             <p class="publishyear">2015</p>
             <div class="menu">
-                <img class="edit-img" src="./edit.png" alt="수정" onclick="alert('수정')">
-                <img class="delete-img" src="./delete.png" alt="삭제" onclick="alert('삭제')">
+                <img class="edit-img" src="./edit.png" alt="수정" onclick="location.href='edit.html?id=2'">
+                <img class="delete-img" src="./delete.png" alt="삭제" onclick="deleteCheck()">
             </div>
         </div>
-        
+   
         <div class="white-line">
             <p class="num">1</p>
             <p class="booknum">005.1</p>
-            <p class="title">프로그래머로 사는 법</p>
+            <a href="view.html?id=1" class="title">프로그래머로 사는 법</a>
             <p class="author">샘 라이트스톤</p>
             <p class="publisher">한빛미디어</p>
             <p class="publishyear">2012</p>
             <div class="menu">
-                <img class="edit-img" src="./edit.png" alt="수정" onclick="alert('수정')">
-                <img class="delete-img" src="./delete.png" alt="삭제" onclick="alert('삭제')">
+                <img class="edit-img" src="./edit.png" alt="수정" onclick="location.href='edit.html?id=1'">
+                <img class="delete-img" src="./delete.png" alt="삭제" onclick="deleteCheck()">
             </div>
         </div>
         
@@ -189,6 +111,14 @@
     <div class="footer">
         <h2>22200733 최동빈 실전 프로젝트 project2 footer 입니다.</h2>
     </div>
+
+    <script>
+        function deleteCheck() {
+            var a = confirm('게시물을 삭제할까요?');
+            if(a) alert('삭제가 완료되었습니다.');
+            else alert('취소되었습니다.');
+        }
+    </script>
     
     </body>
     

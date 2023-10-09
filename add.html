@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyBookManager-Add</title>
+    <link rel="stylesheet" type="text/css" href="my.css" />
+</head>
+
+<body>
+    <form name="form1" onsubmit="return validateFrom()">
+        <div class="index-line1">
+            <div class="index-myBookManager" onclick="location.href='index.html'">&nbsp;My Book Manager</div>
+            <!-- Navigation Bar -->
+            <div class="navbar">
+                <a href="index.html">Home</a>
+                <a href="#">NoStyle</a>
+                <a href="#">Example</a>
+                <a href="#">About</a>
+            </div>
+        </div>
+        </div>
+        <div class="first-row">
+            <div>
+                <p><b>&nbsp;number</b></p>
+                <input name="number" class="input-num" type="number" placeholder="ex: 3">
+            </div>
+            <div>
+                <p><b>&nbsp;book number</b></p>
+                <input name="booknumber" class="input-booknum" type="text" placeholder="ex: 303.12">
+            </div>
+            <div>
+                <p><b>&nbsp;title</b></p>
+                <input name="title" class="input-title" type="text" placeholder="ex: 혼자 공부하는 자바">
+            </div>
+        </div>
+        <div class="second-row">
+            <div>
+                <p><b>&nbsp;author</b></p>
+                <input name="author" class="input-author" type="text" placeholder="ex: 신용권">
+            </div>
+            <div>
+                <p><b>&nbsp;publisher</b></p>
+                <input name="publisher" class="input-publisher" type="text" placeholder="ex: 한빛미디어">
+            </div>
+            <div>
+                <p><b>&nbsp;publish-year</b></p>
+                <input name="year" class="input-year" type="text" placeholder="ex: 2015">
+            </div>
+        </div>
+        <div class="third-row">
+            <p><b>&nbsp;comment</b></p>
+            <textarea class="comment" placeholder="한줄 평을 입력하세요(선택사항)"></textarea>
+        </div>
+        <div class="last-row">
+            <input class="add-button2" type="submit" value="Add">
+            <input class="reset-button" type="reset" value="Reset">
+        </div>
+    </form>
+
+    <script>
+        function validateFrom() {
+            var number = document.form1.number;
+            if (number.value == "") {
+                alert('번호를 입력하세요');
+                number.focus();
+                return false;
+            }
+
+            var booknumber = document.form1.booknumber;
+            if (booknumber.value == "") {
+                alert('책 번호를 입력하세요');
+                booknumber.focus();
+                return false;
+            }
+
+            var title = document.form1.title;
+            if (title.value == "") {
+                alert('제목을 입력하세요');
+                title.focus();
+                return false;
+            }
+
+            var author = document.form1.author;
+            if (author.value == "") {
+                alert('저자를 입력하세요');
+                author.focus();
+                return false;
+            }
+
+            var publisher = document.form1.publisher;
+            if (publisher.value == "") {
+                alert('출판사를 입력하세요');
+                publisher.focus();
+                return false;
+            }
+
+            var year = document.form1.year;
+            if (year.value == "") {
+                alert('출판년도를 입력하세요');
+                year.focus();
+                return false;
+            }
+
+            alert('추가되었습니다');
+        }
+    </script>
+
+</body>
+
+</html>
