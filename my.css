@@ -9,6 +9,18 @@
     cursor: pointer;
 }
 
+.footer-content {
+    margin-top: 17px;
+    color: grey;
+    font-size: 12px;
+}
+
+.footer {
+    margin-top: 5%;
+    margin-left: 1%;
+    display: flex;
+}
+
 .index-bookList {
     font-size: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
