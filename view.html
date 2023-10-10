@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <form name="form1" onsubmit="return validateFrom()">
+    <div>
         <div class="index-line1">
             <div class="index-myBookManager" onclick="location.href='index.html'">&nbsp;My Book Manager</div>
             <!-- Navigation Bar -->
@@ -54,9 +54,9 @@
             <p><b>&nbsp;comment</b></p>
             <textarea readonly class="comment"></textarea>
         </div>
-        <div class="last-row">
+        <!-- <div class="last-row">
             <button class="add-button2" value="Edit" onclick="editMove">Edit</button>
-        </div>
+        </div> -->
         <div class="footer">
             <svg xmlns="http://www.w3.org/2000/svg" width="12" height="48" fill="gray" class="bi bi-c-circle"
                 viewBox="0 0 16 16">
@@ -65,7 +65,7 @@
             </svg>
             <p class="footer-content">&nbsp;22200733 최동빈 실전 프로젝트 project2</p>
         </div>
-    </form>
+    </div>
 
     <script>
         const urlParams = new URLSearchParams(window.location.search);
