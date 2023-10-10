@@ -54,9 +54,7 @@
             <p><b>&nbsp;comment</b></p>
             <textarea readonly class="comment"></textarea>
         </div>
-        <!-- <div class="last-row">
-            <button class="add-button2" value="Edit" onclick="editMove">Edit</button>
-        </div> -->
+        
         <div class="footer">
             <svg xmlns="http://www.w3.org/2000/svg" width="12" height="48" fill="gray" class="bi bi-c-circle"
                 viewBox="0 0 16 16">
@@ -91,67 +89,6 @@
         author.value = datas[dataId].author;
         publisher.value = datas[dataId].publisher;
         year.value = datas[dataId].year;
-
-        function editMove() {
-            const urlParams = new URLSearchParams(window.location.search);
-            const dataId = urlParams.get('id');
-            location.href = 'edit.html?id='+dataId;
-        }
-
-        // function editCheck() {
-        //     var a = confirm('게시물을 수정할까요?');
-        //     if (a) alert('수정이 완료되었습니다.');
-        //     else alert('취소되었습니다.');
-        // }
-
-        function validateFrom() {
-            var number = document.form1.number;
-            if (number.value == "") {
-                alert('번호를 입력하세요');
-                number.focus();
-                return false;
-            }
-
-            var booknumber = document.form1.booknumber;
-            if (booknumber.value == "") {
-                alert('책 번호를 입력하세요');
-                booknumber.focus();
-                return false;
-            }
-
-            var title = document.form1.title;
-            if (title.value == "") {
-                alert('제목을 입력하세요');
-                title.focus();
-                return false;
-            }
-
-            var author = document.form1.author;
-            if (author.value == "") {
-                alert('저자를 입력하세요');
-                author.focus();
-                return false;
-            }
-
-            var publisher = document.form1.publisher;
-            if (publisher.value == "") {
-                alert('출판사를 입력하세요');
-                publisher.focus();
-                return false;
-            }
-
-            var year = document.form1.year;
-            if (year.value == "") {
-                alert('출판년도를 입력하세요');
-                year.focus();
-                return false;
-            }
-
-            editCheck();
-            // alert('변경되었습니다');
-        }
-
-
     </script>
 
 </body>

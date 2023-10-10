@@ -98,8 +98,12 @@
                 if (a) {
                     alert('수정이 완료되었습니다.');
                     location.href = 'index.html';
+                    return false;
                     }
-                else alert('취소되었습니다.');
+                else {
+                    alert('취소되었습니다.');
+                    return false;
+                }
             }
 
         function validateFrom() {
@@ -145,8 +149,7 @@
                 return false;
             }
 
-            editCheck();
-            // alert('변경되었습니다');
+            return editCheck();
         }
         
         
