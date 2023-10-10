@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyBookManager-Edit</title>
+    <title>MyBookManager-View</title>
     <link rel="stylesheet" type="text/css" href="my.css" />
 </head>
 
@@ -24,30 +24,30 @@
         </div>
         <div class="first-row">
             <div>
-                <p><b>&nbsp;number</b></p>
-                <input readonly id="number" name="number" class="input-num" type="number" placeholder="ex: 3">
+                <p><b>number</b></p>
+                <p id="number" class="view-num"></p>
             </div>
             <div>
-                <p><b>&nbsp;book number</b></p>
-                <input readonly id="booknumber" name="booknumber" class="input-booknum" type="text" placeholder="ex: 303.12">
+                <p><b>book number</b></p>
+                <p id="booknumber" class="view-booknum"></p>
             </div>
             <div>
-                <p><b>&nbsp;title</b></p>
-                <input readonly id="title" name="title" class="input-title" type="text" placeholder="ex: 혼자 공부하는 자바">
+                <p><b>title</b></p>
+                <p id="title" class="view-title"></p>
             </div>
         </div>
         <div class="second-row">
             <div>
-                <p><b>&nbsp;author</b></p>
-                <input readonly id="author" name="author" class="input-author" type="text" placeholder="ex: 신용권">
+                <p><b>author</b></p>
+                <p id="author" class="view-author"></p>
             </div>
             <div>
-                <p><b>&nbsp;publisher</b></p>
-                <input readonly id="publisher" name="publisher" class="input-publisher" type="text" placeholder="ex: 한빛미디어">
+                <p><b>publisher</b></p>
+                <p id="publisher" class="view-publisher"></p>
             </div>
             <div>
-                <p><b>&nbsp;publish-year</b></p>
-                <input readonly id="year" name="year" class="input-year" type="text" placeholder="ex: 2015">
+                <p><b>publish-year</b></p>
+                <p id="year" class="view-year"></p>
             </div>
         </div>
         <div class="third-row">
@@ -83,12 +83,12 @@
         const publisher = document.getElementById('publisher');
         const year = document.getElementById('year');
 
-        number.value = datas[dataId].number;
-        booknumber.value = datas[dataId].booknumber;
-        title.value = datas[dataId].title;
-        author.value = datas[dataId].author;
-        publisher.value = datas[dataId].publisher;
-        year.value = datas[dataId].year;
+        number.textContent = datas[dataId].number;
+        booknumber.textContent = datas[dataId].booknumber;
+        title.textContent = datas[dataId].title;
+        author.textContent = datas[dataId].author;
+        publisher.textContent = datas[dataId].publisher;
+        year.textContent = datas[dataId].year;
     </script>
 
 </body>

@@ -264,6 +264,34 @@ body {
     height: calc(100vh*60/820);
 }
 
+.view-content {
+    display: flex;
+    margin-left: 5%;
+}
+
+.view-num,
+.view-booknum,
+.view-title,
+.view-author,
+.view-publisher,
+.view-year {
+    border-radius: 10px;
+    width: calc(100vw*360/1440);
+    height: calc(100vh*60/820);
+    border: none;
+    padding-left: 10px;
+    background-color: antiquewhite;
+}
+
+.view-num:focus,
+.view-booknum:focus,
+.view-title:focus,
+.view-author:focus,
+.view-publisher:focus,
+.view-year:focus {
+    outline: none;
+}
+
 .comment {
     border-radius: 10px;
     width: calc(100vw*1000/1440);
